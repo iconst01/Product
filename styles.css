@@ -1,0 +1,61 @@
+body{
+    background-image:url('images/geometric-running-man-vector-white-background-63995182.jpg.webp');
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:20px;
+    }
+
+header{
+    
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    color:black;
+    margin: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+
+}
+
+img{
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.product{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2%;
+    text-align: center;
+    
+
+}
+h2{
+    text-decoration: underline;
+    font-size: 20px;
+    
+}
+/* Responsive styles */
+@media (max-width: 1200px) { /* Desktop */
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) { /* Tablets */
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) { /* iPhones */
+    .container {
+        grid-template-columns: 1fr; /* Stacks items vertically */
+    }
+}
